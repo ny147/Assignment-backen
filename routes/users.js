@@ -45,6 +45,10 @@ const secret = process.env.JWT_SECRET
 //         }
 //     })
 // })
+router.get('/',(req,res)=>{
+   res.send('Hello Assignement EGCO')
+
+})
 
 router.get('/contacts',ensureToken,(req,res)=>{
    
