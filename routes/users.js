@@ -99,7 +99,7 @@ router.post('/login',(req,res) => {
         if(result){
             // const secret = process.env.JWT_SECRET
             // console.log('value is %s',secret)
-            const token = jwt.sign({ user : user.username},secret,{ expiresIn: '1800s' })
+            const token = jwt.sign({ user : user.username},secret,{ expiresIn: '2400s' })
             res.json({
                 message: 'Authenticated! Use this token in the "Authorization" header',
                 token: token
