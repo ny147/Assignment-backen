@@ -1,7 +1,7 @@
 
 const mongo = require('../model/mongo');
 var ObjectId = require('mongodb').ObjectId;
-const cName = "ContactList"
+const cName = "Contacts"
 
 
 async function showAllContacts(){
